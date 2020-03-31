@@ -1,0 +1,76 @@
+.content{
+    width: 400px;
+    height: 400px;
+    border: 0px red solid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    perspective: 2800px;
+}
+
+.cube{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+.cube div{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    background-color: seashell;
+    color: red;
+    backface-visibility: hidden;
+    font-size: 80px;
+    border-radius: 2px;
+    line-height: 400px;
+    text-align: center;
+    opacity: 0.5;
+    backface-visibility: visible;
+    transform-style: preserve-3d;
+    border: 5px hotpink solid;
+
+}
+
+.front{
+    transform: translateZ(200px);
+}
+
+.back{
+    transform: rotateY(180deg) translateZ(200px);
+}
+
+.left{
+    transform: rotateY(-90deg) translateZ(200px);
+}
+
+.right{
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.top{
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.bottom{
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+.cube{
+    transform: rotateX(-22deg) rotateY(-38deg) ;
+}
+
+.cube:hover {
+    animation: cubeRotation 5s infinite; /* Safari 4.0 - 8.0 */
+    /* animation: cubeRotation 5s infinite;
+    /* transform: rotateX(-22deg) rotateY(-38deg) ; */
+}
+
+@keyframes cubeRotation {
+    0%   {  transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);   }
+    50%   { transform: rotateX(-22deg) rotateY(-238deg) rotateZ(0deg);  }
+    100%   {    transform: rotateX(-22deg) rotateY(-398deg) rotateZ(0deg);  }
+} */
