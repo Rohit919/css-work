@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(128, 105, 105);
+}
+
+span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 70px;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 350px;
+    border: 5px solid #444;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    transition: 0.5s;
+    
+}
+
+input[type="checkbox"]:hover + span{
+    color: #222;
+    border-color: #222;
+}
+
+input[type="checkbox"]:checked + span{
+    color: #00fff5;
+    border-color: #00fff5;
+}
