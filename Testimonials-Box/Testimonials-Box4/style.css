@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: wheat;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-top: 12%;
+    margin-bottom: 11.2%;
+    position: relative;
+    width: 450px;
+    height: 500px;
+    box-shadow: 5px 5px 10px black;
+    background: white;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.content{
+    font-size: x-large;
+}
+
+.title{
+    text-align: right;
+    font-size: xx-large;
+}
+img{
+    opacity: 0.4;
+    margin-top: 30px;
+    margin-left: calc(100% - 105px);
+    width: 120px;
+    height: 120px;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:nth-child(1):hover ~ .bg,
+.container .card:nth-child(1):hover{
+    background:linear-gradient(#03A9F4, #E91E63);
+}
+
+.container .card:nth-child(1):hover{
+    box-shadow: 5px 5px 50px black;
+}
+
+.container .card:nth-child(2):hover ~ .bg,
+.container .card:nth-child(2):hover{
+    background:linear-gradient(#ffc107, #e91e63);
+}
+
+.container .card:nth-child(2):hover{
+    box-shadow: 5px 5px 50px black;
+}
+
+.container .card:nth-child(3):hover ~ .bg,
+.container .card:nth-child(3):hover{
+    background:linear-gradient(#ffc107, #19fd36);
+}
+
+.container .card:nth-child(3):hover{
+    box-shadow: 5px 5px 50px black;
+}
+
