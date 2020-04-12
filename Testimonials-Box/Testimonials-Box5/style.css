@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #060c21;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    margin-bottom: 11.2%;
+    position: relative;
+    width: 370px;
+    height: 450px;
+    background: #060c21;
+    padding: 20px;
+    box-sizing: border-box;
+    /* z-index: 1; */
+    transition: 0.5s;
+    border: 1px solid #000;
+}
+
+.card h2{
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 11em;
+    color: rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+}
+
+.card:hover h2{
+    top: -25px;
+    right: 20px;
+}
+
+.card h3{
+    font-size: 30px;
+    color: white;
+}
+
+.card p{
+    font-size: 20px;
+    color: white;
+}
+
+.card .more{
+    /* visibility: hidden; */
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    padding: 3px 10px;
+    border: 2px solid white;
+    font-size: 25px;
+    box-sizing: border-box;
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.card:hover .more{
+    transform: translateY(0px);
+    /* visibility: visible; */
+    opacity: 1;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 370px;
+    height: 450px;
+    background: white;
+    z-index:-1;
+    transform: skew(2deg, 2deg);
+}
+
+.card:nth-child(1)::before{
+    background: linear-gradient(315deg,#ff5248,#f248f5 );
+}
+
+.card:nth-child(2)::before{
+    background: linear-gradient(315deg,#45ff45, #a64ae4 );
+}
+
+.card:nth-child(3)::before{
+    background: linear-gradient(315deg, #d1f531, #24f1e0 );
+}
+
+.card:nth-child(4)::before{
+    background: linear-gradient(315deg, #483cf8, #f53162);
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
