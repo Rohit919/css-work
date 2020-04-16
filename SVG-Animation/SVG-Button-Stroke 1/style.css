@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: red;
+    background:#88f3ea;
 }
 
 a{
@@ -32,14 +32,14 @@ a svg rect{
 }
 
 a svg rect{
-    stroke: #fff;
+    stroke: #df5278;
     stroke-width: 6;
     stroke-dasharray: 180, 60;
     stroke-dashoffset: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 a:hover svg rect{
     stroke-dasharray: 60, 180;
-    stroke-dashoffset: 270;
+    stroke-dashoffset: 330;
 }
