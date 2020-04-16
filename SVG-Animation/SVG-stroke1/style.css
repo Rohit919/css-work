@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(drops-of-water-3391752.jpg);
+    background-size: cover;
+}
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 300px;
+}
+
+svg text{
+    font-size: 200px;
+    fill: rgba(0, 0, 0, 0.1);
+    font-weight: bolder;
+    stroke-width: 1px;
+    stroke: #fff;
+    stroke-linejoin: round;
+    stroke-dasharray: 80;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    100%{
+        stroke-dashoffset: 160;
+    }
+}

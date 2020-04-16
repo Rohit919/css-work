@@ -40,22 +40,6 @@ img{
     transition: 0.5s;
 }
 
-.container .card:hover .face1{
-    background: rgb(235, 5, 120);
-}
-
-.container .card .face1 .content{
-    opacity: 0.4;
-}
-
-.container .card:hover .face1 .content{
-    opacity: 1;
-}
-
-.container .card:hover .face2 {
-    transform: translateY(0);
-}
-
 .container .card .face2{
     position: relative;
     background: #fff;
@@ -91,7 +75,23 @@ img{
     transition: 0.5s;
 }
 
-.container .card:hover .more{
+.container .card:hover .face1{
+    background: rgb(235, 5, 120);
+}
+
+.container .card .face1 .content{
+    opacity: 0.4;
+}
+
+.container .card:hover .face1 .content{
+    opacity: 1;
+}
+
+.container .card:hover .face2 {
+    transform: translateY(0);
+}
+
+.container .card .more:hover{
     background: rgb(235, 5, 120);
 }
 
