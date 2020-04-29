@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS SLIDER ANIMATION</h1>
+        <div class="slider-container">
+            <div class="mySlide fade">
+                <img src="img1.jpg" alt="">
+                <div class="text">
+                    <div class="title">Caption Text One</div>
+                    <div class="subTitle">Subtitle</div>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <img src="img4.jpg" alt="">
+                <div class="text">
+                    <div class="title">Caption Text Two</div>
+                    <div class="subTitle">Subtitle</div>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <img src="img3.jpg" alt="">
+                <div class="text">
+                    <div class="title">Caption Text Three</div>
+                    <div class="subTitle">Subtitle</div>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <img src="img5.jpg" alt="">
+                <div class="text">
+                    <div class="title">Caption Text Four</div>
+                    <div class="subTitle">Subtitle</div>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <img src="img6.jpg" alt="">
+                <div class="text">
+                    <div class="title">Caption Text Five</div>
+                    <div class="subTitle">Subtitle</div>
+                </div>
+            </div>
+            <button id="btn1" onclick="plusSlides(-1)">&#10094;</button>
+            <button id="btn2" onclick="plusSlides(1)">&#10095;</button>
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript">
+    </script>
+</body>
+
+</html>

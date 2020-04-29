@@ -1,0 +1,110 @@
+.header-top{
+    background:#727CB6;
+}
+.wrapper {
+    background:#FFFFFF;
+    margin:0 auto;
+    width: 100%;
+}
+ /* .ie8 #header {
+    border-bottom: 1px solid #e9e9e9; 
+} */
+.top-info {
+    padding:7px 10px;
+    color:#fff;
+    line-height:28px;
+}
+.top-info span {
+    font:600 12px/28px "open sans",Helvetica, Arial, sans-serif;
+    padding-right: 15px;
+}
+.top-info span i {
+    font-size: 13px;
+    margin-right: 5px;
+}
+.top-info ul {
+    float: right;
+    list-style: none outside none;
+    margin-bottom: 0;
+}
+.top-info li,
+.top-info li a
+{
+    float:left;
+    transition:all 0.2s ease-in;
+    -webkit-transition:all 0.2s ease-in;
+    -moz-transition:all 0.2s ease-in;
+    -ms-transition:all 0.2s ease-in;
+    -o-transition:all 0.2s ease-in;
+}
+.top-info li a
+{
+    color:#fff;
+    display: inline-block;
+    font-size:18px;
+    height:29px;
+    line-height:28px;
+    text-align: center;
+    width:30px;
+}
+
+.top-info li a:hover{color:#fff;}
+.top-info li:hover a.my-facebook{color:#2260D2;}
+.top-info li:hover a.my-tweet{color:#039EFE;}
+.top-info li:hover a.my-pint{color:#FF0000;}
+.top-info li:hover a.my-rss{color:#E8AE28;}
+.top-info li:hover a.my-skype{color:#5BD1FF;}
+.top-info li:hover a.my-google{color:#FF0000;}
+
+/*Animated-Search
+====================================*/
+.search-bar {
+    float: right;
+}
+
+.search-bar .search-label {
+    background: inherit;
+    border-radius: 5px;
+    display: block;
+    height: 29px;
+    overflow: hidden;
+}
+
+.search-bar .search-label .search-button, .search-bar .search-label .search-input {
+    background: transparent;
+    border: 0 none;
+    height: 30px;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+}
+.search-bar label{margin: 0}
+
+.search-bar .search-label .search-button i{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.search-bar .search-label .search-button {
+    background: inherit;
+    color: #696969;
+    height: 30px;
+    transition: all 0.6s ease 0s;
+    width: 30px;
+}
+
+.search-bar .search-label .search-input {
+    background: #eee ;
+    color: #666;
+    font-weight: normal;
+    width: 0;
+    transition: width 0.6s ease 0s;
+}
+.search-exp .search-bar .search-label .search-button{
+    background: #eee;
+    color: #c9c9c9;
+}
+
+.search-exp .search-bar .search-label .search-input{
+    width: 150px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS SLIDER ANIMATION</h1>
+        <div class="slider">
+            <img src="img1.jpg" alt="">
+            <img src="img2.jpg" alt="">
+            <img src="img3.jpg" alt="">
+            <img src="img4.jpg" alt="">
+            <img src="img5.jpg" alt="">
+            <img src="img6.jpg" alt="">
+            <button id="btn1" onclick="plusIndex(-1)" >&#10094;</button>
+            <button id="btn2" onclick="plusIndex(1)" >&#10095;</button>
+        </div>
+    </div>
+    <script>
+        var index = 1;
+        showImage(1);
+        
+        function plusIndex(n){
+            index = index + n;
+            showImage(index); 
+        }
+
+        function showImage(n) {
+            var i;
+            var images = document.querySelectorAll("img");
+            if(n > images.length){
+                index = 1
+            }
+            if(n  < 1){
+                index = images.length;
+            }
+            for(i = 0; i < images.length; i++){
+                images[i].style.display = 'none';
+            }
+            images[index - 1].style.display = 'block';
+
+        }
+
+        autoSlide();
+        function autoSlide(){
+            var i;
+            var images = document.querySelectorAll("img");
+            for(i = 0; i < images.length; i++){
+                images[i].style.display = 'none';
+            }
+            images[index - 1].style.display = 'block';
+            if(index > images.length){
+                index = 1
+            }
+            index = index + 1;
+        }
+        setInterval(autoSlide, 2000)
+    </script>
+</body>
+
+</html>

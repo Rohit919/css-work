@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="slide">
+        <h1>Image Slide Show Using HTML and JavaScript </h1>
+        <hr>
+        <img src="img1.jpg" alt="" id="image">
+    </div>
+</body>
+<script>
+    var images = [
+        "img1.jpg",
+        "img2.jpg",
+        "img3.jpg",
+        "img4.jpg",
+        "img5.jpg",
+        "img6.jpg",
+    ]
+    var i = 0;
+    function slides() {
+        document.querySelector("#image").src = images[i];
+        if(i >= images.length - 1) {
+            i = 0;
+        }
+        else {
+            i++;
+        }
+    }
+
+    setInterval(slides, 2000);
+</script>
+</html>

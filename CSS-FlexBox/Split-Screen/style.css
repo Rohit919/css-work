@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Tahoma, sans-serif;
+    background: white;
+}
+
+section {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+section .screen {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section .screen:hover {
+    flex-grow: 4;
+}
+
+section .screen:nth-child(1){
+    background: rgb(142, 212, 233);
+}
+
+section .screen:nth-child(2){
+    background: rgb(252, 19, 174);
+}
+
+section .screen .card {
+    max-width: 300px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+section .screen .card .imgBox {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+section .screen .card .imgBox img{
+    width: 200px;
+}
+
+section .screen .card a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+}
+
+section .screen .card .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 100px;
+    background: #fff;
+    font-size: large;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+section .screen:nth-child(1) .card a:hover ~ .content,
+section .screen:nth-child(1) .card .content:hover {
+    opacity: 1;
+    visibility: visible;
+    background: rgb(142, 212, 233);
+}
+
+
+section .screen:nth-child(2) .card a:hover ~ .content,
+section .screen:nth-child(2) .card .content:hover {
+    opacity: 1;
+    visibility: visible;
+    background: rgb(252, 19, 174);
+}
+
+
+

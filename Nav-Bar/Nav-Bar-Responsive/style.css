@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .menu-container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    background: white;
+    justify-content: space-between;
+}
+
+header .menu-container .logo {
+    margin-left: 5%;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header .menu-container .logo a {
+    text-decoration: none;
+}
+
+header .menu-container ul {
+    display: flex;
+    padding-right: 5%;
+    margin: 4px;
+}
+
+header .menu-container ul li {
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .menu-container ul li:last-child {
+    border-right: none;
+    margin: 0 0 0 100px;
+}
+
+header .menu-container ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0 40px;
+}
+
+header .menu-container ul li a .menu-icon {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin: 0 auto ;
+    overflow: hidden;
+}
+
+header .menu-container ul li a .fas {
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    font-size: 30px;
+    transition: 0.5s;
+    color: #000; 
+}
+
+header .menu-container ul li a:hover .fas {
+    transform: translateY(-100%);
+    color: #226cad;
+}
+
+header .menu-container ul li a .menu-name {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+header .menu-container ul li a .menu-name span{
+    display: block;
+    position: relative;
+    font-size: large;
+    color: black;
+    line-height: 20px;
+    transition: 0.6s;
+}
+
+header .menu-container ul li a .menu-name span::before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #226cad;
+    transition: 0.6s;
+}
+
+header .menu-container ul li a:hover .menu-name span{
+    transform: translateY(20px);
+}
+
+header .menu-container ul li:last-child {
+    border-right: none;
+    margin: 0 0 0 100px;
+}
+
+header .menu-container ul li:last-child a {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #226cad 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+}
+header .menu-container ul li:last-child a:hover {
+    background: linear-gradient(to top,  #226cad 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+}
+
+header .menu-container ul li:last-child a span {
+    background: none;
+}
+
+header .menu-container ul li:last-child {
+    border-right: none;
+    margin: 8px 20px 0 100px;
+    height: 30px;
+}
+
+header .menu-container .menuToggle{
+    background: linear-gradient(to bottom, #226cad 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+    padding: 7px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    font-size: 1rem;
+    margin: 3px;
+    color: black;
+}
+
+@media (max-width: 992px) {
+    header .menu-container {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    header .menu-container .logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+    }
+    header .menu-container .menu-bar {
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        transform: scaleY(0);
+        display: none;
+        transform-origin: top;
+        transition: all 0.5s;
+    }
+    header .menu-container .active {
+        transform: scaleY(1);
+        display: block;
+    }
+
+    header .menu-container ul {
+        padding: 0;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 0;
+    }
+    header .menu-container ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 3px 0;
+        display: flex;
+        border-right: none;
+    }
+    header .menu-container ul li:last-child {
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        transform: translate(-10%);
+    }
+    header .menu-container ul li a {
+        padding: 0 20px;
+    }
+
+    header .menu-container ul li a .menu-icon{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    header .menu-container ul li a .menu-name {
+        width: auto;
+        display: inline-block;
+        margin: 10px;
+    }
+    header .menu-container ul li:last-child  a{
+        height: 50px;
+        margin-top:-5px;
+    }
+    header .menu-container .menuToggle{
+        display: block;
+    }
+}
+
