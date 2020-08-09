@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-section {
+    width: 98vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.skill-section .skill-header {
+    margin: 3% 2%;
+}
+
+.skill-section .skill-header h2 {
+    line-height: 30px;
+}
+
+.skill-section .skill-header div {
+    width: 180px;
+    height: 0;
+    border: 2px yellow solid;
+}
+
+.skill-section .skill-header h5 {
+    color: rgb(90, 88, 88);
+}
+
+.skill-section .skill-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2%;
+}
+
+.skill-section .skill-container .skill {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill-section .skill-container .skill h4 {
+    text-shadow: 2px 2px 5px rgb(90, 88, 88);
+    font-size: 1.5rem;
+}
+
+.skill-section .skill-container .skill ul {
+    /* list-style: none; */
+    margin: 0;
+}
+
+.skill-section .skill-container .skill ul li {
+    color: rgb(90, 88, 88);
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.skill-section .skill-container .skill .content {
+    margin-left: 5px;
+}
+
+.skill-section .skill-container .skill {
+    display: flex;
+    flex-flow: column;
+}
+
+.skill-section .skill-container .skill .skill-header {
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+.skill-section .skill-container .skill .skill-header h3 {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px rgb(90, 88, 88);
+}
+
+.skill-section .skill-container .skill .skill-header p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* .skill-section .skill-container .skill .details li::before {
+    content: url(liicon.png);
+    height: 18px;
+    width: ;
+} */
+
+
+
+/* ============================== */
+
+.skill-section .skill-box {
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    height: auto;
+    background: #636262;
+    box-shadow: 0 0 10px 5px black;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 0 3%;
+    box-sizing: border-box;
+}
+
+.skill-section .skill-box h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 0;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.skill-section .skill-box .skill-bar p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 5px;
+    color: white;
+
+}
+
+.skill-section .skill-box .skill-bar p:nth-child(2) {
+    float: right;
+}
+
+.skill-section .skill-box .skill-bar .skill {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 20px;
+    border: 2px solid rgb(15, 210, 245);
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.skill-section .skill-box .skill-bar .skill .skill-level {
+    height: 60%;
+    margin: 4px;
+    background: rgb(15, 210, 245);
+}
+
+.skill-section .skill-box .skill-bar .skill .skill1 {
+    width: 92%;
+}
+
+.skill-section .skill-box .skill-bar .skill .skill2 {
+    width: 85%;
+}
+
+.skill-section .skill-box .skill-bar .skill .skill3 {
+    width: 65%;
+}
+
+.skill-section .skill-box .skill-bar .skill .skill4 {
+    width: 70%;
+}
+
+.skill-section .skill-box .skill-bar .skill .skill5 {
+    width: 85%;
+}
+
+@media (max-width: 991px) {
+    .skill-section .skill-container {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2%;
+    }
+    .skill-section .skill-box {
+        width: 90%;
+    }
+
+    .skill-section .skill-box,
+    .skill-section .skill-container .skill {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+}

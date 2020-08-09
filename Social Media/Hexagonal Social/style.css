@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0aecc7;
+}
+
+.media-container {
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    margin: 0 10px;
+}
+
+ul li a {
+    position: relative;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-size: 35px;
+    transition: 0.5s;
+    color: #fff;
+}
+ ul li a::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #fff;
+     z-index: -1;
+     transform: rotate(60deg);
+ }
+
+ ul li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(-60deg);
+}
+
+ul li:nth-child(1) a,
+ul li:nth-child(1) a::after,
+ul li:nth-child(1) a::before {
+    background-color: #1877f2;
+}
+
+ul li:nth-child(2) a,
+ul li:nth-child(2) a::after,
+ul li:nth-child(2) a::before {
+    background-color: #c32aa3;
+}
+ul li:nth-child(3) a,
+ul li:nth-child(3) a::after,
+ul li:nth-child(3) a::before {
+    background-color: #ea4335;
+}
+ul li:nth-child(4) a,
+ul li:nth-child(4) a::after,
+ul li:nth-child(4) a::before {
+    background-color: #007bb5;
+}
+ul li:nth-child(5) a,
+ul li:nth-child(5) a::after,
+ul li:nth-child(5) a::before {
+    background-color: #1da1f2;
+}
+ 
+
+

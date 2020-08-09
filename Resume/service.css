@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    /* background: #060c21; */
+}
+
+.service-section {
+    width: 98vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.service-section .service-header {
+    margin: 3% 2%;
+}
+
+.service-section .service-header h2 {
+    line-height: 30px;
+}
+
+.service-section .service-header div {
+    width: 180px;
+    height: 0;
+    border: 2px yellow solid;
+}
+
+.service-section .service-header h5 {
+    color: rgb(90, 88, 88);
+}
+
+.service-section .service-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.service-section .service-container .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 12%; */
+    margin-bottom: 11.2%;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #060c21;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border: 1px solid #000;
+}
+
+.service-section .service-container .card h2{
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 20em;
+    color: rgba(136, 119, 119, 0.05);
+    transition: 0.5s;
+}
+
+.service-section .service-container .card:hover h2{
+    top: -25px;
+}
+
+.service-section .service-container .card h3{
+    font-size: 30px;
+    color: white;
+}
+
+.service-section .service-container .card p{
+    font-size: 20px;
+    color: white;
+}
+
+.service-section .service-container .card .more{
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 25px;
+    box-sizing: border-box;
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.service-section .service-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.service-section .service-container .card:hover .more{
+    transform: translateY(0px);
+    /* visibility: visible; */
+    opacity: 1;
+}
+
+.service-section .service-container .card::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index:-1;
+    transform: skew(2deg, 2deg);
+}
+
+.service-section .service-container .card:nth-child(1)::before{
+    background: linear-gradient(315deg,#ff5248,#f248f5 );
+}
+
+.service-section .service-container .card:nth-child(2)::before{
+    background: linear-gradient(315deg,#45ff45, #a64ae4 );
+}
+
+.service-section .service-container .card:nth-child(3)::before{
+    background: linear-gradient(315deg, #d1f531, #24f1e0 );
+}
+
+.service-section .service-container .card:nth-child(4)::before{
+    background: linear-gradient(315deg, #483cf8, #f53162);
+}
+
+.service-section .service-container .card::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+

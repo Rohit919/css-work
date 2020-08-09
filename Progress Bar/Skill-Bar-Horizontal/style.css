@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-container .skill-box {
+    width: 45%;
+    height: auto;
+    background: #161616;
+    box-shadow: 0 0 10px 5px black;
+    padding: 2.5%;
+    border-radius: 10px;
+}
+
+.skill-container .skill-box h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 0;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.skill-container .skill-box .skill-bar p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 5px;
+    color: white;
+
+}
+
+.skill-container .skill-box .skill-bar p:nth-child(2) {
+    float: right;
+}
+
+.skill-container .skill-box .skill-bar .skill {
+    width: 100%;
+    height: 20px;
+    border: 2px solid rgb(15, 210, 245);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.skill-container .skill-box .skill-bar .skill .skill-level {
+    height: 60%;
+    margin: 4px;
+    background: rgb(15, 210, 245);
+}
+
+.skill-container .skill-box .skill-bar .skill .skill1 {
+    width: 92%;
+}
+
+.skill-container .skill-box .skill-bar .skill .skill2 {
+    width: 85%;
+}
+
+.skill-container .skill-box .skill-bar .skill .skill3 {
+    width: 65%;
+}
+
+.skill-container .skill-box .skill-bar .skill .skill4 {
+    width: 70%;
+}
+
+.skill-container .skill-box .skill-bar .skill .skill5 {
+    width: 85%;
+}
+
+@media (max-width: 991px) {
+    .skill-container .skill-box {
+        width: 90%;
+    }
+}

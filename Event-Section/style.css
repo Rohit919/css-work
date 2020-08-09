@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: #262626;
+}
+
+.event-container {
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    background: url(img.jpg);
+    background-size: cover;
+}
+
+.event-container .left-section,
+.event-container .right-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.event-container .left-section {
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.event-container .right-section {
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+
+.event-container .left-section .event-title {
+    width: 70%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 3%;
+    margin: 3%;
+}
+
+.event-container .left-section .event-title:hover {
+    background: rgb(236, 75, 102);
+}
+
+.event-container .left-section .event-title .title {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.event-container .right-section .event {
+    width: 80%;
+    height: fit-content;
+    background: white;
+    color: black;
+    display: flex;
+    flex-flow: row;
+    margin: 3%;
+}
+
+.event-container .right-section .event .event-date {
+    width: 50%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.event-container .right-section .event:hover .event-date {
+    background: rgb(236, 75, 102);
+}
+
+.event-container .right-section .event .event-date .event-day {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event-container .right-section .event .event-date .event-month {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.event-container .right-section .event .event-name {
+    padding: 3%;
+    position: relative;
+}
+
+.event-container .right-section .event .event-name h3 {
+    margin: 0;
+}
+
+.event-container .right-section .event .event-name p {
+    margin: 0;
+    line-height: 20px;
+}
+
+.event-container .right-section .event .event-name .read-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.event-container .right-section .event .event-name .read-more a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid black;
+    width: 115px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.event-container .right-section .event .event-name .read-more a:hover {
+    background-color: rgb(236, 75, 102);
+}
+
+@media (max-width: 991px) {
+    .event-container {
+        height: 100%;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .event-container .right-section {
+        background: none;
+    }
+
+    .event-container .left-section,
+    .event-container .right-section {
+        width: 90%;
+    }
+
+    .event-container .right-section .event ,
+    .event-container .left-section .event-title {
+        width: 100%;
+    }
+    .event-container .left-section .event-title {
+        margin: 0;
+    }
+}

@@ -58,53 +58,54 @@
 
 /*Animated-Search
 ====================================*/
-.search-bar {
-    float: right;
-}
-
-.search-bar .search-label {
-    background: inherit;
-    border-radius: 5px;
-    display: block;
-    height: 29px;
-    overflow: hidden;
-}
-
-.search-bar .search-label .search-button, .search-bar .search-label .search-input {
-    background: transparent;
-    border: 0 none;
+.container .search-bar {
     height: 30px;
-    margin: 0;
-    outline: medium none;
-    padding: 0;
+    background: rgb(81, 120, 248);
+    border-radius: 20px;
 }
-.search-bar label{margin: 0}
 
-.search-bar .search-label .search-button i{
+.container .search-bar .search-button {
+    width: 24px;
+    height: 24px;
+    color: black;
+    background: rgb(81, 120, 248);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-}
-.search-bar .search-label .search-button {
-    background: inherit;
-    color: #696969;
-    height: 30px;
-    transition: all 0.6s ease 0s;
-    width: 30px;
+    float: left;
+    border: none;
+    margin: 3px;
+    box-sizing: border-box;
 }
 
-.search-bar .search-label .search-input {
-    background: #eee ;
-    color: #666;
-    font-weight: normal;
+.container .search-bar .search-button {
+    outline: none;
+}
+
+.container .search-bar .search-input {
     width: 0;
-    transition: width 0.6s ease 0s;
+    height: 30px;
+    color: black;
+    box-sizing: border-box;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    float: right;
+    border-radius: 15px;
+    transition: 0.6s;
 }
-.search-exp .search-bar .search-label .search-button{
-    background: #eee;
-    color: #c9c9c9;
+.container .search-bar:hover .search-button,
+.container .search-bar .search-input:hover + .search-button {
+    background: white;
 }
 
-.search-exp .search-bar .search-label .search-input{
-    width: 150px;
+.container .search-bar:hover .search-input {
+    width: 180px;
 }
+
